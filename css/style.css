@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+#header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 80px;
+    padding: 0 40px;     
+    box-sizing: border-box;
+}
+
+#logo i {
+    margin-right: 6px;
+}
+
+#logo h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+#logo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo .heighlight {
+    color: aqua;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+nav ul li.current a {
+    color: aqua;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+main {
+    padding-top: 80px;
+      
+}
+
+#showcase {
+    background: url('/img/planet-volumes-BABI2m1Bax0-unsplash.jpg') no-repeat center center / cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+#showcase::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#showcase * {
+    position: relative;
+    z-index: 2;
+}
+
+#showcase h1 {
+    font-size: 33px;
+    margin-bottom: 0 0 20px 0;
+    line-height: 1.4;
+}
+
+#showcase p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#newsleter {
+    padding: 20px 20px;
+    background-color: #333333; /* لون رمادي غامق زي الهيدر */
+    color: white;
+    text-align: center;
+}
+
+#newsleter h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#newsleter input[type="email"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+    max-width: 250px;
+}
+
+#newsleter button {
+    background-color: #555555; /* لون الزر أفتح شوية من الخلفية */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#newsleter button:hover {
+    background-color: #777777; /* لون أخف عند الـ hover */
+}
+
+#boxes{
+    margin-top: 20px;
+    padding: 60px  80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#boxes .boxes{
+    text-align: center;
+    margin-left: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+#boxes .boxes:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+#boxes .boxes i { 
+    font-size: 50px;
+    color: #00e6e6; 
+    margin-bottom: 15px;
+}
+@media (max-width: 1020px){
+    #boxes{
+        flex-direction: column;
+    }
+}
+
+#footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+#footer p {
+    margin: 0; 
+    padding: 0 15px; 
+  }
